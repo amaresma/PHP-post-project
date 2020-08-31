@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 <body>
-    
+    <div class="center-title">
+        <h1 id="title"> PC Builder </h1>
+        <p id="description"> Send us your requirements and we'll build for you the computer you need.
+        </p>
+    </div>
+    <div class="input-headings">
+        <form id="survey-form" action="/url-where-you-want-to-submit-form-data">
+            <label id="name-label" for="name"> Name </label>
+            <input id="name" type="text" name="name" placeholder="Full Name" class="form-inputs" required>
+            </input>
+            <br>
+            <label id="email-label" for="email"> Email </label>
+            <input id="email" type="email" name="email" placeholder="name@provider.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-inputs" required>
+            </input>
+            <br>
+            <label id="number-label" for="number"> Age </label>
+            <input id="number" type="number" name="number" placeholder="14" pattern="\d*" min="14" max="100" class="form-inputs" required>
+            </input>
+            <br>
+            <label for="dropdown" type="model"> Select CPU Model </label>
+            <select name="dropdown" id="dropdown" class="form-inputs">
+                <option value="Model 1"> Intel Core i5 10600K </option>
+                <option value="Model 1"> Intel Core i9 10900K </option>
+                <option value="Model 1"> Intel Core i7 10700K </option>
+                <option value="Model 1"> Intel Pentium Gold G5400 </option>
+                <option value="Model 1"> Intel Core i9 10980XE </option>
+                <option value="Model 2"> AMD Ryzen 9 3950X </option>
+                <option value="Model 3"> AMD Ryzen 7 3700X </option>
+                <option value="Model 4"> AMD Ryzen 5 3600X </option>
+                <option value="Model 5"> AMD Ryzen 3 3300X </option>
+                <option value="Model 6"> AMD Ryzen 5 3400G </option>
+            </select>
+            <div class="spacing-features">
+            <label id="usage_purpose" for="usage_purpose"> <b>Usage Purpose: </b></label>
+            <input id="usage_purpose" id="gaming" type="radio" name="purpose" value="gaming">
+            <label for="usage_purpose"><b>Gaming</b></label>
+            <input id="usage_purpose" id="workstation" type="radio" name="purpose" value="workstation">
+            <label for="usage_purpose"><b>Workstation</b></label>
+            </div>
+            <div class="spacing-features">
+            <label for="features"><b>Upgrade features: </b></label>
+            <br>
+            <input id="checkbox" type="checkbox" name="features" value="ram">
+            <label for="checkbox">16GB RAM</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="features" value="hd">
+            <label for="checkbox">M.2 PCIe SSD Hard Drive</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="features" value="graphics">
+            <label for="checkbox">NVIDIA GeForce Graphics</label>
+            <br>
+            <input id="checkbox" type="checkbox" name="features" value="fan">
+            <label for="checkbox">CPU Liquid Cooler</label>
+            </div>
+            <label id="textarea" for="">Additional Comments</label>
+            <br>
+            <textarea id="textarea" name="instructions" id="" cols="40" rows="5"></textarea>
+            <br>
+            <input id="submit" type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
 </body>
 </html>

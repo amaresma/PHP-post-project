@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    font-family: 'Patrick Hand';
+    line-height: 1.4;
+    margin: auto;
+    display: block;
+    /* background-color: #d7dcdd; */
+}
+
+#title {
+    margin: 0.25rem 0 0 0;
+}
+
+form {
+    background: rgb(232, 232, 230);
+    /* background: rgb(147, 5, 5, 0.2); */
+    padding: 2.5rem 2.5rem;
+    border-radius: 2rem;
+    width: 500px;
+    margin: auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    form {
+        width: 400px;
+    }
+} 
+
+.center-title {
+    text-align: center;
+}
+
+.spacing-features {
+    margin: 0.50rem 0.50rem;
+}
+
+.submit-button {
+    font-family: 'Patrick Hand';
+    font-size: 20px;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.50rem auto 0 auto;
+    background: #fc6b03; 
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.input-headings {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    vertical-align: middle;
+}
+
+.form-inputs {
+    margin: 0.25rem auto auto 0.25rem;
+    width: 90%;
+    height: 2rem;
+    padding: 0.25rem 0.75rem;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
